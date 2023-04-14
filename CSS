@@ -1,0 +1,100 @@
+.wpac-custom-login-form #um-submit-btn , .wpac-custom-signup-form #um-submit-btn {
+	background: #242A56 !important;
+	margin-top: 15px;
+	font-size: 18px;
+}
+.wpac-custom-signup-form #um-submit-btn {
+	background: #8A4DEC !important;
+}
+.wpac-custom-login-form .um .um-form input[type=text], .wpac-custom-login-form .um .um-form input[type=tel], .wpac-custom-login-form .um .um-form input[type=password], .wpac-custom-login-form .um .um-form textarea {
+	border: none !important;
+	border-bottom: 3px solid #ccc !important;
+	padding: 20px 20px 20px 40px !important;
+	transition: 0.5s all;
+}
+.wpac-custom-login-form .um .um-form input[type=text]:focus, .wpac-custom-login-form .um .um-form input[type=tel]:focus, .wpac-custom-login-form .um .um-form input[type=password]:focus, .wpac-custom-login-form .um .um-form textarea:focus {
+	border-bottom: 3px solid #242A56 !important;
+}
+.wpac-custom-signup-form .um .um-form input[type=text], .wpac-custom-signup-form .um .um-form input[type=tel], .wpac-custom-signup-form .um .um-form input[type=password], .wpac-custom-signup-form .um .um-form textarea {
+	border: none !important;
+	border-bottom: 3px solid #ccc !important;
+	padding: 10px 20px 10px 20px !important;
+	transition: 0.5s all;
+}
+.wpac-custom-signup-form .um .um-form input[type=text]:focus, .wpac-custom-signup-form .um .um-form input[type=tel]:focus, .wpac-custom-signup-form .um .um-form input[type=password]:focus, .wpac-custom-signup-form .um .um-form textarea:focus {
+	border-bottom: 3px solid #242A56 !important;
+}
+.wpac-custom-signup-form .um-field-label {
+	margin-bottom: 0 !important;
+}
+.um-form input[type=text], .um-form input[type=search], .um-form input[type=tel], .um-form input[type=number], .um-form input[type=password] {
+	    font-size: 19px !important;
+	body {
+    font-family: arial, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+#header {
+    background-color: black;
+    /*Opacity start*/
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    filter: alpha(opacity=80);
+    -moz-opacity: 0.80;
+    -khtml-opacity: 0.8;
+    opacity: 0.8;
+    /*Opacity end*/
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 150px;
+    padding: 0;
+    margin: 0;
+}
+#header #header-content {
+    margin: 10px;
+}
+	
+	/***
+* class: .sticky-header
+*/
+header.sticky-header {
+	--header-height: 100px;
+	--shrink-header-to: 0.6;
+	--transition: .45s cubic-bezier(.4, 0, .2, 1);
+	background-color: rgba(244, 245, 248, 1);
+	transition: background-color var(--transition),
+				backdrop-filter var(--transition),
+				box-shadow var(--transition);
+}
+
+/***
+* Sticky header activated
+*/
+header.sticky-header.elementor-sticky--effects {
+	background-color: rgba(244, 245, 248, .8);
+	box-shadow: 0px 4px 33px 1px rgba(0, 0, 0, .07);
+	-webkit-backdrop-filter: saturate(180%) blur(20px);
+	backdrop-filter: saturate(180%) blur(20px);
+}
+header.sticky-header > .elementor-container {
+	min-height: var(--header-height);
+	transition: min-height var(--transition);
+}
+header.sticky-header.elementor-sticky--effects > .elementor-container {
+	min-height: calc( var(--header-height) * var(--shrink-header-to) );
+}
+
+/***
+* Shorter header on mobile (70px instead of 100px)
+*/
+@media only screen and (max-width: 767px) {
+	header.sticky-header {
+		--header-height: 70px;
+	}
+}
+.shadow h2 
+{
+	text-shadow: 15px 15px 0px black; 
+	}
